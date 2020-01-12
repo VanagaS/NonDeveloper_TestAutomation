@@ -1,0 +1,74 @@
+{
+  "name": "vessnd-linter",
+  "version": "1.1.0",
+  "description": "A linter for VESSND",
+  "main": "lib/linter_vessnd.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanagaS/Techie-Tools/vessnd-linter.git"
+  },
+  "keywords": [
+    "linter",
+    "syntactical",
+    "Selenium",
+    "non-developers"
+  ],
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test",
+    "build": "babel index.js -o compiled.js"
+  },
+  "dependencies": {
+    "atom-linter": "^9.0.0",
+    "atom-package-deps": "^4.0.1",
+    "chai": "^3.5.0",
+    "js-yaml": "^3.8.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0"
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "env": {
+      "node": true
+    },
+    "globals": {
+      "atom": true
+    }
+  },
+  "author": "VanagaS",
+  "license": "MIT"
+}

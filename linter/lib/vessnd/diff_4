@@ -1,0 +1,142 @@
+-----------------------------------------------------------------------------------------------------------
+deleting overridable keys for keyNode([object Object])
+end - storeMappingPair
+ - position(114), line(3), lineStart(81) lineIndent(3) tag(null) anchor(null) result("special-file-tag"), char(13, cursor()
+skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+start - skipSeparationSpace
+ - position(114), line(3), lineStart(81) lineIndent(3) tag(null) anchor(null) result("special-file-tag"), char(13, cursor()
+start - readLineBreak
+ - position(114), line(3), lineStart(81) lineIndent(3) tag(null) anchor(null) result("special-file-tag"), char(13, cursor()
+end - readLineBreak
+ - position(116), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result("special-file-tag"), char(32, cursor()
+  mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result("special-file-tag"), char(108, cursor(loadTesting:)
+end - skipSeparationSpace, returning lineBreaks(1)
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result("special-file-tag"), char(108, cursor(loadTesting:)
+$$$$$$$$$$$$$$$$$$$$$ setting _line to value(4), Current Char(108), next characters(loadTesting:), previous characters(l)
+Calling compose node from readBlockMapping around line: 1450
+composeNode Called: parentIndent(0), nodeContext(2), allowToSeek(false), allowCompact(true)
+start - composeNode
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result("special-file-tag"), char(108, cursor(loadTesting:)
+start - readTagProperty.
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+checking FOR: loadTesting:
+end - readTagProperty. returning FALSE, ch !== ! 0x21
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+start - readAnchorProperty
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+end - readAnchorProperty. returning FALSE, ch !=== & 0x26
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+allowBlockCollection(false), atNewLine(false), allowCompact(true),  indentStatus(1), nodeContext(2), flowIndent(undefined), parentIndent(0), blockIndent(undefined)
+readFlowCollection Called: nodeIndent(0)
+start - readFlowCollection
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+readSingleQuotedScalar Called: nodeIndent(0)
+start - readSingleQuotedScalar
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+readDoubleQuotedScalar Called: nodeIndent(0)
+start - readDoubleQuotedScalar
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+start - readAlias
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+end - readAlias. Returning FALSE
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+readPlainScalar Called: nodeIndent(0), withinFlowCollection(false)
+start - readPlainScalar
+ - position(118), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(108, cursor(loadTesting:)
+  mid - readPlainScalar. while-loop-break: following is WS,FOL OR withinFlowCollection & following is flow indicator
+ - position(129), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(""), char(58, cursor(:)
+captureSegment Called: start(118), end(129), checkJson(false)
+start - captureSegment
+ - position(129), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(""), char(58, cursor(:)
+end - captureSegment, changed result
+ - position(129), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result("loadTesting"), char(58, cursor(:)
+end - readPlainScalar. returning TRUE: state.result is true/not null
+ - position(129), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result("loadTesting"), char(58, cursor(:)
+end - composeNode. checking for state.tag(?) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true
+ - position(129), line(4), lineStart(116) lineIndent(2) tag(?) anchor(null) result("loadTesting"), char(58, cursor(:)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^ State Line 4 and _Line: 4 and state.position(129), position_value(:) nextChars(:)
+tag value: ?
+Reached value: ':'
+Calling compose node from readBlockMapping around line: 1125
+composeNode Called: parentIndent(2), nodeContext(4), allowToSeek(true), allowCompact(false)
+start - composeNode
+ - position(130), line(4), lineStart(116) lineIndent(2) tag(?) anchor(null) result("loadTesting"), char(32, cursor()
+skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+start - skipSeparationSpace
+ - position(130), line(4), lineStart(116) lineIndent(2) tag(null) anchor(null) result(null), char(32, cursor()
+  mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+end - skipSeparationSpace, returning lineBreaks(0)
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+start - readTagProperty.
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+checking FOR: true
+end - readTagProperty. returning FALSE, ch !== ! 0x21
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+start - readAnchorProperty
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+end - readAnchorProperty. returning FALSE, ch !=== & 0x26
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+allowBlockCollection(false), atNewLine(false), allowCompact(false),  indentStatus(1), nodeContext(4), flowIndent(undefined), parentIndent(2), blockIndent(undefined)
+readFlowCollection Called: nodeIndent(3)
+start - readFlowCollection
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+readBlockScalar Called: nodeIndent(3)
+start - readBlockScalar.
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+end - readBlockScalar. Returning FALSE: ch !== |or>  0x7C or 0x3E
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+readSingleQuotedScalar Called: nodeIndent(3)
+start - readSingleQuotedScalar
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+readDoubleQuotedScalar Called: nodeIndent(3)
+start - readDoubleQuotedScalar
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+start - readAlias
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+end - readAlias. Returning FALSE
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+readPlainScalar Called: nodeIndent(3), withinFlowCollection(false)
+start - readPlainScalar
+ - position(131), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(null), char(116, cursor(true)
+skipSeparationSpace Called: allowComments(false), checkIndent(-1)
+start - skipSeparationSpace
+ - position(135), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(""), char(13, cursor()
+start - readLineBreak
+ - position(135), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(""), char(13, cursor()
+end - readLineBreak
+ - position(137), line(5), lineStart(137) lineIndent(3) tag(null) anchor(null) result(""), char(32, cursor()
+  mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL
+ - position(139), line(5), lineStart(137) lineIndent(2) tag(null) anchor(null) result(""), char(110, cursor(numberOfThreads:)
+end - skipSeparationSpace, returning lineBreaks(1)
+ - position(139), line(5), lineStart(137) lineIndent(2) tag(null) anchor(null) result(""), char(110, cursor(numberOfThreads:)
+  mid - readPlainScalar. while-loop-break: lineIndent < nodeIndent
+ - position(135), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(""), char(13, cursor()
+captureSegment Called: start(131), end(135), checkJson(false)
+start - captureSegment
+ - position(135), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result(""), char(13, cursor()
+end - captureSegment, changed result
+ - position(135), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result("true"), char(13, cursor()
+end - readPlainScalar. returning TRUE: state.result is true/not null
+ - position(135), line(4), lineStart(116) lineIndent(3) tag(null) anchor(null) result("true"), char(13, cursor()
+  mid - composeNode. FOR-loop-break: state.tag (tag:yaml.org,2002:bool) !== NULL AND !== !  AND === ?
+ - position(135), line(4), lineStart(116) lineIndent(3) tag(tag:yaml.org,2002:bool) anchor(null) result(true), char(13, cursor()
+end - composeNode. checking for state.tag(tag:yaml.org,2002:bool) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true
+ - position(135), line(4), lineStart(116) lineIndent(3) tag(tag:yaml.org,2002:bool) anchor(null) result(true), char(13, cursor()
+storeMappingPair Called: _result([object Object]), overrideablekeys([object Object]), keytag(?), keynode(loadTesting), valuenode(true), startLine(4), startPos(118)
+start - storeMappingPair
+ - position(135), line(4), lineStart(116) lineIndent(3) tag(tag:yaml.org,2002:bool) anchor(null) result(true), char(13, cursor()
+-----------------------------------------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+subject: Custom types in JS-YAML
+spaces:
+  !space
+    height: 1000
+    points:
+    - !point [ 10, 43, 23 ]
