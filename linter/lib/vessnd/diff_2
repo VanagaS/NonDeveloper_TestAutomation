@@ -1,0 +1,430 @@
+  // loadDocuments Called: options([object Object])
+  >> start - loadDocuments[]
+    >> start - readDocument. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(undefined), anchor(undefined)[rd(344) ]
+      // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+      >> start - skipSeparationSpace. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(undefined), anchor(undefined)[skipSeparationSpace(209) rd(359) ]
+      .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(undefined), anchor(undefined)[skipSeparationSpace(238) rd(359) ]
+      << end - skipSeparationSpace, returning lineBreaks(0). CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(undefined), anchor(undefined)[skipSeparationSpace(247) rd(359) ]
+      // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+      >> start - skipSeparationSpace. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(undefined), anchor(undefined)[skipSeparationSpace(209) rd(423) ]
+      .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(undefined), anchor(undefined)[skipSeparationSpace(238) rd(423) ]
+      << end - skipSeparationSpace, returning lineBreaks(0). CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(undefined), anchor(undefined)[skipSeparationSpace(247) rd(423) ]
+      // composeNode Called: parentIndent(-1), nodeContext(4), allowToSeek(false), allowCompact(true)
+      >> start - composeNode. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(undefined), anchor(undefined)[cn(474) rd(440) ]
+        >> start - readTagProperty.. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rtp(647) cn(516) rd(440) ]
+        << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rtp(673) cn(516) rd(440) ]
+        >> start - readAnchorProperty. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rap(765) cn(516) rd(440) ]
+        << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rap(773) cn(516) rd(440) ]
+        // readBlockSequence Called: nodeIndent(0)
+        >> start - readBlockSequence. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rbs(1354) cn(552) rd(440) ]
+        .   mid - readBlockSequence. while-loop-break ch !== - 0x2D. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rbs(1373) cn(552) rd(440) ]
+        << end - readBlockSequence. IS NOT DETECTED, returning FALSE. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rbs(1423) cn(552) rd(440) ]
+        // readBlockMapping Called: nodeIndent(0) - flowIndent(0)
+        >> start - readBlockMapping. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rbm(1429) cn(553) rd(440) ]
+          // composeNode Called: parentIndent(0), nodeContext(2), allowToSeek(false), allowCompact(true)
+          >> start - composeNode. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[cn(474) rbm(1500) cn(553) rd(440) ]
+            >> start - readTagProperty.. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rtp(647) cn(516) rbm(1500) cn(553) rd(440) ]
+            << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rtp(673) cn(516) rbm(1500) cn(553) rd(440) ]
+            >> start - readAnchorProperty. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rap(765) cn(516) rbm(1500) cn(553) rd(440) ]
+            << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rap(773) cn(516) rbm(1500) cn(553) rd(440) ]
+            // readFlowCollection Called: nodeIndent(0)
+            >> start - readFlowCollection. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1500) cn(553) rd(440) ]
+            << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1500) cn(553) rd(440) ]
+            // readSingleQuotedScalar Called: nodeIndent(0)
+            >> start - readSingleQuotedScalar. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1500) cn(553) rd(440) ]
+            << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1500) cn(553) rd(440) ]
+            // readDoubleQuotedScalar Called: nodeIndent(0)
+            >> start - readDoubleQuotedScalar. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1500) cn(553) rd(440) ]
+            << end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rdqs(1019) cn(560) rbm(1500) cn(553) rd(440) ]
+            >> start - readAlias. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[ra(798) cn(563) rbm(1500) cn(553) rd(440) ]
+            << end - readAlias. Returning FALSE. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[ra(806) cn(563) rbm(1500) cn(553) rd(440) ]
+            // readPlainScalar Called: nodeIndent(0), withinFlowCollection(false)
+            >> start - readPlainScalar. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rps(836) cn(570) rbm(1500) cn(553) rd(440) ]
+              >> start - testDocumentSeparator. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[testDocumentSeparator(1613) rps(902) cn(570) rbm(1500) cn(553) rd(440) ]
+              << end - testDocumentSeparator: returning false. CURSOR(configurations:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[testDocumentSeparator(1636) rps(902) cn(570) rbm(1500) cn(553) rd(440) ]
+            .   mid - readPlainScalar. while-loop-break: following is WS,FOL OR withinFlowCollection & following is flow indicator. CURSOR(:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rps(890) cn(570) rbm(1500) cn(553) rd(440) ]
+              // captureSegment Called: start(0), end(14), checkJson(false)
+              >> start - captureSegment. CURSOR(:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[captureSegment(1653) rps(942) cn(570) rbm(1500) cn(553) rd(440) ]
+              << end - captureSegment, changed result. CURSOR(:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[captureSegment(1675) rps(942) cn(570) rbm(1500) cn(553) rd(440) ]
+            << end - readPlainScalar. returning TRUE: state.result is true/not null. CURSOR(:), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[rps(945) cn(570) rbm(1500) cn(553) rd(440) ]
+          << end - composeNode. checking for state.tag(?) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(:), line(0), lineIndent(0), lineStart(0), tag(?), anchor(null)[cn(639) rbm(1500) cn(553) rd(440) ]
+          // composeNode Called: parentIndent(0), nodeContext(4), allowToSeek(true), allowCompact(false)
+          >> start - composeNode. CURSOR(), line(0), lineIndent(0), lineStart(0), tag(?), anchor(null)[cn(474) rbm(1564) cn(553) rd(440) ]
+            // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+            >> start - skipSeparationSpace. CURSOR(), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[skipSeparationSpace(209) cn(502) rbm(1564) cn(553) rd(440) ]
+              >> start - readLineBreak. CURSOR(), line(0), lineIndent(0), lineStart(0), tag(null), anchor(null)[readLineBreak(185) skipSeparationSpace(227) cn(502) rbm(1564) cn(553) rd(440) ]
+              << end - readLineBreak. CURSOR(), line(1), lineIndent(0), lineStart(17), tag(null), anchor(null)[readLineBreak(204) skipSeparationSpace(227) cn(502) rbm(1564) cn(553) rd(440) ]
+            .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[skipSeparationSpace(238) cn(502) rbm(1564) cn(553) rd(440) ]
+            << end - skipSeparationSpace, returning lineBreaks(1). CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[skipSeparationSpace(247) cn(502) rbm(1564) cn(553) rd(440) ]
+            >> start - readTagProperty.. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rtp(647) cn(516) rbm(1564) cn(553) rd(440) ]
+            << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rtp(673) cn(516) rbm(1564) cn(553) rd(440) ]
+            >> start - readAnchorProperty. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rap(765) cn(516) rbm(1564) cn(553) rd(440) ]
+            << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rap(773) cn(516) rbm(1564) cn(553) rd(440) ]
+            // readBlockSequence Called: nodeIndent(2)
+            >> start - readBlockSequence. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rbs(1354) cn(552) rbm(1564) cn(553) rd(440) ]
+            .   mid - readBlockSequence. while-loop-break ch !== - 0x2D. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rbs(1373) cn(552) rbm(1564) cn(553) rd(440) ]
+            << end - readBlockSequence. IS NOT DETECTED, returning FALSE. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rbs(1423) cn(552) rbm(1564) cn(553) rd(440) ]
+            // readBlockMapping Called: nodeIndent(2) - flowIndent(1)
+            >> start - readBlockMapping. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rbm(1429) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(1), nodeContext(2), allowToSeek(false), allowCompact(true)
+              >> start - composeNode. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[cn(474) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rtp(647) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rtp(673) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rap(765) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rap(773) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(1)
+                >> start - readFlowCollection. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(1)
+                >> start - readSingleQuotedScalar. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(1)
+                >> start - readDoubleQuotedScalar. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rdqs(1019) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAlias. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[ra(798) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAlias. Returning FALSE. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[ra(806) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readPlainScalar Called: nodeIndent(1), withinFlowCollection(false)
+                >> start - readPlainScalar. CURSOR(targetLanguage:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rps(836) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - readPlainScalar. while-loop-break: following is WS,FOL OR withinFlowCollection & following is flow indicator. CURSOR(:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rps(890) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(19), end(33), checkJson(false)
+                  >> start - captureSegment. CURSOR(:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[captureSegment(1653) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR(:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[captureSegment(1675) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readPlainScalar. returning TRUE: state.result is true/not null. CURSOR(:), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[rps(945) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(?) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(:), line(1), lineIndent(2), lineStart(17), tag(?), anchor(null)[cn(639) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(2), nodeContext(4), allowToSeek(true), allowCompact(false)
+              >> start - composeNode. CURSOR(), line(1), lineIndent(2), lineStart(17), tag(?), anchor(null)[cn(474) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+                >> start - skipSeparationSpace. CURSOR(), line(1), lineIndent(2), lineStart(17), tag(null), anchor(null)[skipSeparationSpace(209) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[skipSeparationSpace(238) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - skipSeparationSpace, returning lineBreaks(0). CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[skipSeparationSpace(247) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rtp(647) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rtp(673) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rap(765) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rap(773) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(3)
+                >> start - readFlowCollection. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readBlockScalar Called: nodeIndent(3)
+                >> start - readBlockScalar.. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rbsc(1203) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readBlockScalar. Returning FALSE: ch !== |or>  0x7C or 0x3E. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rbsc(1223) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(3)
+                >> start - readSingleQuotedScalar. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(3)
+                >> start - readDoubleQuotedScalar. CURSOR("javascript"), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(36), end(46), checkJson(true)
+                  >> start - captureSegment. CURSOR("), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[captureSegment(1653) rdqs(1030) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR("), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[captureSegment(1675) rdqs(1030) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning TRUE: ch === "  0x22. CURSOR(), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[rdqs(1032) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(null) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[cn(639) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              // storeMappingPair Called: _result([object Object]), overrideablekeys([object Object]), keytag(?), keynode(targetLanguage), valuenode(javascript), startLine(1), startPos(19)
+              >> start - storeMappingPair. CURSOR(), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[storeMappingPair(1706) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - storeMappingPair. CURSOR(), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[storeMappingPair(1738) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+              >> start - skipSeparationSpace. CURSOR(), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[skipSeparationSpace(209) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readLineBreak. CURSOR(), line(1), lineIndent(3), lineStart(17), tag(null), anchor(null)[readLineBreak(185) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readLineBreak. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[readLineBreak(204) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[skipSeparationSpace(238) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - skipSeparationSpace, returning lineBreaks(1). CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[skipSeparationSpace(247) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(1), nodeContext(2), allowToSeek(false), allowCompact(true)
+              >> start - composeNode. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[cn(474) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rtp(647) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rtp(673) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rap(765) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rap(773) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(1)
+                >> start - readFlowCollection. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(1)
+                >> start - readSingleQuotedScalar. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(1)
+                >> start - readDoubleQuotedScalar. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rdqs(1019) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAlias. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[ra(798) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAlias. Returning FALSE. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[ra(806) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readPlainScalar Called: nodeIndent(1), withinFlowCollection(false)
+                >> start - readPlainScalar. CURSOR(terminateOnFirstFailure:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rps(836) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - readPlainScalar. while-loop-break: following is WS,FOL OR withinFlowCollection & following is flow indicator. CURSOR(:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rps(890) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(51), end(74), checkJson(false)
+                  >> start - captureSegment. CURSOR(:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[captureSegment(1653) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR(:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[captureSegment(1675) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readPlainScalar. returning TRUE: state.result is true/not null. CURSOR(:), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[rps(945) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(?) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(:), line(2), lineIndent(2), lineStart(49), tag(?), anchor(null)[cn(639) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(2), nodeContext(4), allowToSeek(true), allowCompact(false)
+              >> start - composeNode. CURSOR(), line(2), lineIndent(2), lineStart(49), tag(?), anchor(null)[cn(474) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+                >> start - skipSeparationSpace. CURSOR(), line(2), lineIndent(2), lineStart(49), tag(null), anchor(null)[skipSeparationSpace(209) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[skipSeparationSpace(238) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - skipSeparationSpace, returning lineBreaks(0). CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[skipSeparationSpace(247) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rtp(647) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rtp(673) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rap(765) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rap(773) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(3)
+                >> start - readFlowCollection. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readBlockScalar Called: nodeIndent(3)
+                >> start - readBlockScalar.. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rbsc(1203) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readBlockScalar. Returning FALSE: ch !== |or>  0x7C or 0x3E. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rbsc(1223) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(3)
+                >> start - readSingleQuotedScalar. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(3)
+                >> start - readDoubleQuotedScalar. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rdqs(1019) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAlias. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[ra(798) cn(563) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAlias. Returning FALSE. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[ra(806) cn(563) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readPlainScalar Called: nodeIndent(3), withinFlowCollection(false)
+                >> start - readPlainScalar. CURSOR(false), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rps(836) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // skipSeparationSpace Called: allowComments(false), checkIndent(-1)
+                  >> start - skipSeparationSpace. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[skipSeparationSpace(209) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                    >> start - readLineBreak. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[readLineBreak(185) skipSeparationSpace(227) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) ]
+                    << end - readLineBreak. CURSOR(), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[readLineBreak(204) skipSeparationSpace(227) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) ]
+                  .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[skipSeparationSpace(238) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - skipSeparationSpace, returning lineBreaks(1). CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[skipSeparationSpace(247) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - readPlainScalar. while-loop-break: lineIndent < nodeIndent. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rps(923) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(76), end(81), checkJson(false)
+                  >> start - captureSegment. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[captureSegment(1653) rps(942) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[captureSegment(1675) rps(942) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readPlainScalar. returning TRUE: state.result is true/not null. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(null), anchor(null)[rps(945) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              .   mid - composeNode. FOR-loop-break: state.tag (tag:yaml.org,2002:bool) !== NULL AND !== !  AND === ? . CURSOR(), line(2), lineIndent(3), lineStart(49), tag(tag:yaml.org,2002:bool), anchor(null)[cn(608) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(tag:yaml.org,2002:bool) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(tag:yaml.org,2002:bool), anchor(null)[cn(639) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              // storeMappingPair Called: _result([object Object]), overrideablekeys([object Object]), keytag(?), keynode(terminateOnFirstFailure), valuenode(false), startLine(2), startPos(51)
+              >> start - storeMappingPair. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(tag:yaml.org,2002:bool), anchor(null)[storeMappingPair(1706) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - storeMappingPair. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(tag:yaml.org,2002:bool), anchor(null)[storeMappingPair(1738) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+              >> start - skipSeparationSpace. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(tag:yaml.org,2002:bool), anchor(null)[skipSeparationSpace(209) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readLineBreak. CURSOR(), line(2), lineIndent(3), lineStart(49), tag(tag:yaml.org,2002:bool), anchor(null)[readLineBreak(185) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readLineBreak. CURSOR(), line(3), lineIndent(3), lineStart(83), tag(tag:yaml.org,2002:bool), anchor(null)[readLineBreak(204) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(tag:yaml.org,2002:bool), anchor(null)[skipSeparationSpace(238) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - skipSeparationSpace, returning lineBreaks(1). CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(tag:yaml.org,2002:bool), anchor(null)[skipSeparationSpace(247) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(1), nodeContext(2), allowToSeek(false), allowCompact(true)
+              >> start - composeNode. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(tag:yaml.org,2002:bool), anchor(null)[cn(474) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rtp(647) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rtp(673) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rap(765) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rap(773) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(1)
+                >> start - readFlowCollection. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(1)
+                >> start - readSingleQuotedScalar. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(1)
+                >> start - readDoubleQuotedScalar. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rdqs(1019) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAlias. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[ra(798) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAlias. Returning FALSE. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[ra(806) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readPlainScalar Called: nodeIndent(1), withinFlowCollection(false)
+                >> start - readPlainScalar. CURSOR(dataBinding:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rps(836) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - readPlainScalar. while-loop-break: following is WS,FOL OR withinFlowCollection & following is flow indicator. CURSOR(:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rps(890) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(85), end(96), checkJson(false)
+                  >> start - captureSegment. CURSOR(:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[captureSegment(1653) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR(:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[captureSegment(1675) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readPlainScalar. returning TRUE: state.result is true/not null. CURSOR(:), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[rps(945) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(?) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(:), line(3), lineIndent(2), lineStart(83), tag(?), anchor(null)[cn(639) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(2), nodeContext(4), allowToSeek(true), allowCompact(false)
+              >> start - composeNode. CURSOR(), line(3), lineIndent(2), lineStart(83), tag(?), anchor(null)[cn(474) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+                >> start - skipSeparationSpace. CURSOR(), line(3), lineIndent(2), lineStart(83), tag(null), anchor(null)[skipSeparationSpace(209) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[skipSeparationSpace(238) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - skipSeparationSpace, returning lineBreaks(0). CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[skipSeparationSpace(247) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rtp(647) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rtp(673) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rap(765) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rap(773) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(3)
+                >> start - readFlowCollection. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readBlockScalar Called: nodeIndent(3)
+                >> start - readBlockScalar.. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rbsc(1203) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readBlockScalar. Returning FALSE: ch !== |or>  0x7C or 0x3E. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rbsc(1223) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(3)
+                >> start - readSingleQuotedScalar. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(3)
+                >> start - readDoubleQuotedScalar. CURSOR("special-file-tag"), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(99), end(115), checkJson(true)
+                  >> start - captureSegment. CURSOR("), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[captureSegment(1653) rdqs(1030) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR("), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[captureSegment(1675) rdqs(1030) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning TRUE: ch === "  0x22. CURSOR(), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[rdqs(1032) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(null) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[cn(639) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              // storeMappingPair Called: _result([object Object]), overrideablekeys([object Object]), keytag(?), keynode(dataBinding), valuenode(special-file-tag), startLine(3), startPos(85)
+              >> start - storeMappingPair. CURSOR(), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[storeMappingPair(1706) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - storeMappingPair. CURSOR(), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[storeMappingPair(1738) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+              >> start - skipSeparationSpace. CURSOR(), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[skipSeparationSpace(209) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readLineBreak. CURSOR(), line(3), lineIndent(3), lineStart(83), tag(null), anchor(null)[readLineBreak(185) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readLineBreak. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[readLineBreak(204) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[skipSeparationSpace(238) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - skipSeparationSpace, returning lineBreaks(1). CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[skipSeparationSpace(247) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(1), nodeContext(2), allowToSeek(false), allowCompact(true)
+              >> start - composeNode. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[cn(474) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rtp(647) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rtp(673) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rap(765) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rap(773) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(1)
+                >> start - readFlowCollection. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(1)
+                >> start - readSingleQuotedScalar. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(1)
+                >> start - readDoubleQuotedScalar. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rdqs(1019) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAlias. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[ra(798) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAlias. Returning FALSE. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[ra(806) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readPlainScalar Called: nodeIndent(1), withinFlowCollection(false)
+                >> start - readPlainScalar. CURSOR(loadTesting:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rps(836) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - readPlainScalar. while-loop-break: following is WS,FOL OR withinFlowCollection & following is flow indicator. CURSOR(:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rps(890) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(120), end(131), checkJson(false)
+                  >> start - captureSegment. CURSOR(:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[captureSegment(1653) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR(:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[captureSegment(1675) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readPlainScalar. returning TRUE: state.result is true/not null. CURSOR(:), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[rps(945) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(?) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(:), line(4), lineIndent(2), lineStart(118), tag(?), anchor(null)[cn(639) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(2), nodeContext(4), allowToSeek(true), allowCompact(false)
+              >> start - composeNode. CURSOR(), line(4), lineIndent(2), lineStart(118), tag(?), anchor(null)[cn(474) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+                >> start - skipSeparationSpace. CURSOR(), line(4), lineIndent(2), lineStart(118), tag(null), anchor(null)[skipSeparationSpace(209) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[skipSeparationSpace(238) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - skipSeparationSpace, returning lineBreaks(0). CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[skipSeparationSpace(247) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rtp(647) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rtp(673) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rap(765) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rap(773) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(3)
+                >> start - readFlowCollection. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readBlockScalar Called: nodeIndent(3)
+                >> start - readBlockScalar.. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rbsc(1203) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readBlockScalar. Returning FALSE: ch !== |or>  0x7C or 0x3E. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rbsc(1223) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(3)
+                >> start - readSingleQuotedScalar. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(3)
+                >> start - readDoubleQuotedScalar. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rdqs(1019) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAlias. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[ra(798) cn(563) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAlias. Returning FALSE. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[ra(806) cn(563) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readPlainScalar Called: nodeIndent(3), withinFlowCollection(false)
+                >> start - readPlainScalar. CURSOR(true), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rps(836) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // skipSeparationSpace Called: allowComments(false), checkIndent(-1)
+                  >> start - skipSeparationSpace. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[skipSeparationSpace(209) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                    >> start - readLineBreak. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[readLineBreak(185) skipSeparationSpace(227) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) ]
+                    << end - readLineBreak. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[readLineBreak(204) skipSeparationSpace(227) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) ]
+                  .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[skipSeparationSpace(238) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - skipSeparationSpace, returning lineBreaks(1). CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[skipSeparationSpace(247) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - readPlainScalar. while-loop-break: lineIndent < nodeIndent. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rps(923) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(133), end(137), checkJson(false)
+                  >> start - captureSegment. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[captureSegment(1653) rps(942) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[captureSegment(1675) rps(942) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readPlainScalar. returning TRUE: state.result is true/not null. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(null), anchor(null)[rps(945) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              .   mid - composeNode. FOR-loop-break: state.tag (tag:yaml.org,2002:bool) !== NULL AND !== !  AND === ? . CURSOR(), line(4), lineIndent(3), lineStart(118), tag(tag:yaml.org,2002:bool), anchor(null)[cn(608) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(tag:yaml.org,2002:bool) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(tag:yaml.org,2002:bool), anchor(null)[cn(639) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              // storeMappingPair Called: _result([object Object]), overrideablekeys([object Object]), keytag(?), keynode(loadTesting), valuenode(true), startLine(4), startPos(120)
+              >> start - storeMappingPair. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(tag:yaml.org,2002:bool), anchor(null)[storeMappingPair(1706) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - storeMappingPair. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(tag:yaml.org,2002:bool), anchor(null)[storeMappingPair(1738) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+              >> start - skipSeparationSpace. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(tag:yaml.org,2002:bool), anchor(null)[skipSeparationSpace(209) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readLineBreak. CURSOR(), line(4), lineIndent(3), lineStart(118), tag(tag:yaml.org,2002:bool), anchor(null)[readLineBreak(185) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readLineBreak. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(tag:yaml.org,2002:bool), anchor(null)[readLineBreak(204) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(tag:yaml.org,2002:bool), anchor(null)[skipSeparationSpace(238) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - skipSeparationSpace, returning lineBreaks(1). CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(tag:yaml.org,2002:bool), anchor(null)[skipSeparationSpace(247) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(1), nodeContext(2), allowToSeek(false), allowCompact(true)
+              >> start - composeNode. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(tag:yaml.org,2002:bool), anchor(null)[cn(474) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rtp(647) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rtp(673) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rap(765) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rap(773) cn(516) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(1)
+                >> start - readFlowCollection. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(1)
+                >> start - readSingleQuotedScalar. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(1)
+                >> start - readDoubleQuotedScalar. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rdqs(1019) cn(560) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAlias. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[ra(798) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAlias. Returning FALSE. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[ra(806) cn(563) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readPlainScalar Called: nodeIndent(1), withinFlowCollection(false)
+                >> start - readPlainScalar. CURSOR(numberOfThreads:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rps(836) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - readPlainScalar. while-loop-break: following is WS,FOL OR withinFlowCollection & following is flow indicator. CURSOR(:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rps(890) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(141), end(156), checkJson(false)
+                  >> start - captureSegment. CURSOR(:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[captureSegment(1653) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR(:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[captureSegment(1675) rps(942) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readPlainScalar. returning TRUE: state.result is true/not null. CURSOR(:), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[rps(945) cn(570) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(?) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(:), line(5), lineIndent(2), lineStart(139), tag(?), anchor(null)[cn(639) rbm(1500) cn(553) rbm(1564) cn(553) rd(440) ]
+              // composeNode Called: parentIndent(2), nodeContext(4), allowToSeek(true), allowCompact(false)
+              >> start - composeNode. CURSOR(), line(5), lineIndent(2), lineStart(139), tag(?), anchor(null)[cn(474) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+                >> start - skipSeparationSpace. CURSOR(), line(5), lineIndent(2), lineStart(139), tag(null), anchor(null)[skipSeparationSpace(209) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - skipSeparationSpace. while-loop-break ch!=0, when ch is NOT EOL. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[skipSeparationSpace(238) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - skipSeparationSpace, returning lineBreaks(0). CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[skipSeparationSpace(247) cn(502) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readTagProperty.. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rtp(647) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readTagProperty. returning FALSE, ch !== ! 0x21. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rtp(673) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAnchorProperty. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rap(765) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAnchorProperty. returning FALSE, ch !=== & 0x26. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rap(773) cn(516) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readFlowCollection Called: nodeIndent(3)
+                >> start - readFlowCollection. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rfc(1091) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readFlowCollection. Returning FALSE: ch !== [or{  0x5B or 0x7B. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rfc(1120) cn(554) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readBlockScalar Called: nodeIndent(3)
+                >> start - readBlockScalar.. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rbsc(1203) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readBlockScalar. Returning FALSE: ch !== |or>  0x7C or 0x3E. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rbsc(1223) cn(558) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readSingleQuotedScalar Called: nodeIndent(3)
+                >> start - readSingleQuotedScalar. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rsqs(957) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readSingleQuotedScalar. Returning FALSE: ch !== '  0x27. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rsqs(965) cn(559) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readDoubleQuotedScalar Called: nodeIndent(3)
+                >> start - readDoubleQuotedScalar. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rdqs(1007) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readDoubleQuotedScalar. Returning FALSE: ch !== "  0x22. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rdqs(1019) cn(560) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readAlias. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[ra(798) cn(563) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readAlias. Returning FALSE. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[ra(806) cn(563) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                // readPlainScalar Called: nodeIndent(3), withinFlowCollection(false)
+                >> start - readPlainScalar. CURSOR(99), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rps(836) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // skipSeparationSpace Called: allowComments(false), checkIndent(-1)
+                  >> start - skipSeparationSpace. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[skipSeparationSpace(209) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                    >> start - readLineBreak. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[readLineBreak(185) skipSeparationSpace(227) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) ]
+                    << end - readLineBreak. CURSOR( ), line(6), lineIndent(3), lineStart(161), tag(null), anchor(null)[readLineBreak(204) skipSeparationSpace(227) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) ]
+                  << end - skipSeparationSpace, returning lineBreaks(1). CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[skipSeparationSpace(247) rps(911) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                .   mid - readPlainScalar. while-loop-break: lineIndent < nodeIndent. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rps(923) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  // captureSegment Called: start(158), end(160), checkJson(false)
+                  >> start - captureSegment. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[captureSegment(1653) rps(942) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                  << end - captureSegment, changed result. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[captureSegment(1675) rps(942) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readPlainScalar. returning TRUE: state.result is true/not null. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(null), anchor(null)[rps(945) cn(570) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              .   mid - composeNode. FOR-loop-break: state.tag (tag:yaml.org,2002:int) !== NULL AND !== !  AND === ? . CURSOR(), line(5), lineIndent(3), lineStart(139), tag(tag:yaml.org,2002:int), anchor(null)[cn(608) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - composeNode. checking for state.tag(tag:yaml.org,2002:int) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(tag:yaml.org,2002:int), anchor(null)[cn(639) rbm(1564) cn(553) rbm(1564) cn(553) rd(440) ]
+              // storeMappingPair Called: _result([object Object]), overrideablekeys([object Object]), keytag(?), keynode(numberOfThreads), valuenode(99), startLine(5), startPos(141)
+              >> start - storeMappingPair. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(tag:yaml.org,2002:int), anchor(null)[storeMappingPair(1706) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - storeMappingPair. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(tag:yaml.org,2002:int), anchor(null)[storeMappingPair(1738) rbm(1573) cn(553) rbm(1564) cn(553) rd(440) ]
+              // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+              >> start - skipSeparationSpace. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(tag:yaml.org,2002:int), anchor(null)[skipSeparationSpace(209) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                >> start - readLineBreak. CURSOR(), line(5), lineIndent(3), lineStart(139), tag(tag:yaml.org,2002:int), anchor(null)[readLineBreak(185) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+                << end - readLineBreak. CURSOR( ), line(6), lineIndent(3), lineStart(161), tag(tag:yaml.org,2002:int), anchor(null)[readLineBreak(204) skipSeparationSpace(227) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+              << end - skipSeparationSpace, returning lineBreaks(1). CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(tag:yaml.org,2002:int), anchor(null)[skipSeparationSpace(247) rbm(1577) cn(553) rbm(1564) cn(553) rd(440) ]
+            .   mid - readBlockMapping. while-loop-break lineIndent(0) < nodeIndent(2). CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(tag:yaml.org,2002:int), anchor(null)[rbm(1586) cn(553) rbm(1564) cn(553) rd(440) ]
+            << end - readBlockMapping. returning the value of detected: true. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[rbm(1608) cn(553) rbm(1564) cn(553) rd(440) ]
+          << end - composeNode. checking for state.tag(null) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[cn(639) rbm(1564) cn(553) rd(440) ]
+          // storeMappingPair Called: _result([object Object]), overrideablekeys([object Object]), keytag(?), keynode(configurations), valuenode([object Object]), startLine(0), startPos(0)
+          >> start - storeMappingPair. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[storeMappingPair(1706) rbm(1573) cn(553) rd(440) ]
+          << end - storeMappingPair. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[storeMappingPair(1738) rbm(1573) cn(553) rd(440) ]
+          // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+          >> start - skipSeparationSpace. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[skipSeparationSpace(209) rbm(1577) cn(553) rd(440) ]
+          << end - skipSeparationSpace, returning lineBreaks(0). CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[skipSeparationSpace(247) rbm(1577) cn(553) rd(440) ]
+        << end - readBlockMapping. returning the value of detected: true. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[rbm(1608) cn(553) rd(440) ]
+      << end - composeNode. checking for state.tag(null) != NULL ||  state.anchor(null) !== NULL || hasContent(true) is TRUE: Returning: true. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[cn(639) rd(440) ]
+      // skipSeparationSpace Called: allowComments(true), checkIndent(-1)
+      >> start - skipSeparationSpace. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[skipSeparationSpace(209) rd(441) ]
+      << end - skipSeparationSpace, returning lineBreaks(0). CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[skipSeparationSpace(247) rd(441) ]
+      >> start - testDocumentSeparator. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[testDocumentSeparator(1613) rd(451) ]
+      << end - testDocumentSeparator: returning false. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[testDocumentSeparator(1636) rd(451) ]
+    << end - readDocument. position(161) < state.length(161) - 1. EMPTY RETURN. CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[rd(466) ]
+  << end - loadDocuments. Returning state.documents([object Object]). CURSOR( ), line(6), lineIndent(0), lineStart(161), tag(null), anchor(null)[]
+undefined
+{ configurations:
+   { targetLanguage: 'javascript',
+     terminateOnFirstFailure: false,
+     dataBinding: 'special-file-tag',
+     loadTesting: true,
+     numberOfThreads: 99 } }

@@ -1,0 +1,42 @@
+--- # @VanagaS 23rd Feb 2017 | Google.com test
+version: "0.1"
+configuration:
+  target-language: "java" # optional - for Editor purpose (Editor alerts whether a feature is supported based on language)
+  terminate-on-first-failure: false # @optional - defaults to false
+  data-binding: "path-to-file" # @optional - path to CSV, Excel file containing data
+  load-testing: false # @optional - defaults to false
+  number-of-threads: 1 # @optional - for load-testing, defaults to 1, if load-testing is true, defaults to 5
+  browsers:
+    - htmlunit # OR no-gui, background
+    - firefox
+    - ie
+    - chrome
+start:
+  - page:
+      browsers:
+        - firefox
+        - chrome
+      url: "http://google.com"
+      wait: 10
+      change:
+        element:
+          - input:
+              by-name: "q"
+              enter-data: "Cheese!"
+              wait: 10000
+          - input:
+              by-name: "l"
+              enter-data: "Say!"
+          - input:
+              by-tag: "@//sgra/srta/"
+              submit: true
+      check:
+        element:
+          - input:
+              find-text: "@title"
+              compare: "cheese!"
+              print: true
+      page:
+        url: "github.io"
+  - page:
+      url: "http://gmail.com"

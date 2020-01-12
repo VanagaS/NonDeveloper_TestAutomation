@@ -1,0 +1,2628 @@
+{
+    "input": "version: 1.0\r\nsanjeev:\r\n !start\r\n   page:\r\n\u0000",
+    "filename": null,
+    "schema": {
+    "include": [
+        {
+            "include": [
+                {
+                    "include": [
+                        {
+                            "include": [
+                                {
+                                    "include": [
+                                        {
+                                            "include": [],
+                                            "implicit": [],
+                                            "explicit": [
+                                                {
+                                                    "tag": "tag:yaml.org,2002:str",
+                                                    "kind": "scalar",
+                                                    "instanceOf": null,
+                                                    "predicate": null,
+                                                    "represent": null,
+                                                    "defaultStyle": null,
+                                                    "styleAliases": {}
+                                                },
+                                                {
+                                                    "tag": "tag:yaml.org,2002:seq",
+                                                    "kind": "sequence",
+                                                    "instanceOf": null,
+                                                    "predicate": null,
+                                                    "represent": null,
+                                                    "defaultStyle": null,
+                                                    "styleAliases": {}
+                                                },
+                                                {
+                                                    "tag": "tag:yaml.org,2002:map",
+                                                    "kind": "mapping",
+                                                    "instanceOf": null,
+                                                    "predicate": null,
+                                                    "represent": null,
+                                                    "defaultStyle": null,
+                                                    "styleAliases": {}
+                                                }
+                                            ],
+                                            "compiledImplicit": [],
+                                            "compiledExplicit": [
+                                                {
+                                                    "tag": "tag:yaml.org,2002:str",
+                                                    "kind": "scalar",
+                                                    "instanceOf": null,
+                                                    "predicate": null,
+                                                    "represent": null,
+                                                    "defaultStyle": null,
+                                                    "styleAliases": {}
+                                                },
+                                                {
+                                                    "tag": "tag:yaml.org,2002:seq",
+                                                    "kind": "sequence",
+                                                    "instanceOf": null,
+                                                    "predicate": null,
+                                                    "represent": null,
+                                                    "defaultStyle": null,
+                                                    "styleAliases": {}
+                                                },
+                                                {
+                                                    "tag": "tag:yaml.org,2002:map",
+                                                    "kind": "mapping",
+                                                    "instanceOf": null,
+                                                    "predicate": null,
+                                                    "represent": null,
+                                                    "defaultStyle": null,
+                                                    "styleAliases": {}
+                                                }
+                                            ],
+                                            "compiledTypeMap": {
+                                                "scalar": {
+                                                    "tag:yaml.org,2002:str": {
+                                                        "tag": "tag:yaml.org,2002:str",
+                                                        "kind": "scalar",
+                                                        "instanceOf": null,
+                                                        "predicate": null,
+                                                        "represent": null,
+                                                        "defaultStyle": null,
+                                                        "styleAliases": {}
+                                                    }
+                                                },
+                                                "sequence": {
+                                                    "tag:yaml.org,2002:seq": {
+                                                        "tag": "tag:yaml.org,2002:seq",
+                                                        "kind": "sequence",
+                                                        "instanceOf": null,
+                                                        "predicate": null,
+                                                        "represent": null,
+                                                        "defaultStyle": null,
+                                                        "styleAliases": {}
+                                                    }
+                                                },
+                                                "mapping": {
+                                                    "tag:yaml.org,2002:map": {
+                                                        "tag": "tag:yaml.org,2002:map",
+                                                        "kind": "mapping",
+                                                        "instanceOf": null,
+                                                        "predicate": null,
+                                                        "represent": null,
+                                                        "defaultStyle": null,
+                                                        "styleAliases": {}
+                                                    }
+                                                },
+                                                "fallback": {
+                                                    "tag:yaml.org,2002:str": {
+                                                        "tag": "tag:yaml.org,2002:str",
+                                                        "kind": "scalar",
+                                                        "instanceOf": null,
+                                                        "predicate": null,
+                                                        "represent": null,
+                                                        "defaultStyle": null,
+                                                        "styleAliases": {}
+                                                    },
+                                                    "tag:yaml.org,2002:seq": {
+                                                        "tag": "tag:yaml.org,2002:seq",
+                                                        "kind": "sequence",
+                                                        "instanceOf": null,
+                                                        "predicate": null,
+                                                        "represent": null,
+                                                        "defaultStyle": null,
+                                                        "styleAliases": {}
+                                                    },
+                                                    "tag:yaml.org,2002:map": {
+                                                        "tag": "tag:yaml.org,2002:map",
+                                                        "kind": "mapping",
+                                                        "instanceOf": null,
+                                                        "predicate": null,
+                                                        "represent": null,
+                                                        "defaultStyle": null,
+                                                        "styleAliases": {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "implicit": [
+                                        {
+                                            "tag": "tag:yaml.org,2002:null",
+                                            "kind": "scalar",
+                                            "instanceOf": null,
+                                            "represent": {},
+                                            "defaultStyle": "lowercase",
+                                            "styleAliases": {}
+                                        },
+                                        {
+                                            "tag": "tag:yaml.org,2002:bool",
+                                            "kind": "scalar",
+                                            "instanceOf": null,
+                                            "represent": {},
+                                            "defaultStyle": "lowercase",
+                                            "styleAliases": {}
+                                        },
+                                        {
+                                            "tag": "tag:yaml.org,2002:int",
+                                            "kind": "scalar",
+                                            "instanceOf": null,
+                                            "represent": {},
+                                            "defaultStyle": "decimal",
+                                            "styleAliases": {
+                                                "2": "binary",
+                                                "8": "octal",
+                                                "10": "decimal",
+                                                "16": "hexadecimal",
+                                                "bin": "binary",
+                                                "oct": "octal",
+                                                "dec": "decimal",
+                                                "hex": "hexadecimal"
+                                            }
+                                        },
+                                        {
+                                            "tag": "tag:yaml.org,2002:float",
+                                            "kind": "scalar",
+                                            "instanceOf": null,
+                                            "defaultStyle": "lowercase",
+                                            "styleAliases": {}
+                                        }
+                                    ],
+                                    "explicit": [],
+                                    "compiledImplicit": [
+                                        {
+                                            "tag": "tag:yaml.org,2002:null",
+                                            "kind": "scalar",
+                                            "instanceOf": null,
+                                            "represent": {},
+                                            "defaultStyle": "lowercase",
+                                            "styleAliases": {}
+                                        },
+                                        {
+                                            "tag": "tag:yaml.org,2002:bool",
+                                            "kind": "scalar",
+                                            "instanceOf": null,
+                                            "represent": {},
+                                            "defaultStyle": "lowercase",
+                                            "styleAliases": {}
+                                        },
+                                        {
+                                            "tag": "tag:yaml.org,2002:int",
+                                            "kind": "scalar",
+                                            "instanceOf": null,
+                                            "represent": {},
+                                            "defaultStyle": "decimal",
+                                            "styleAliases": {
+                                                "2": "binary",
+                                                "8": "octal",
+                                                "10": "decimal",
+                                                "16": "hexadecimal",
+                                                "bin": "binary",
+                                                "oct": "octal",
+                                                "dec": "decimal",
+                                                "hex": "hexadecimal"
+                                            }
+                                        },
+                                        {
+                                            "tag": "tag:yaml.org,2002:float",
+                                            "kind": "scalar",
+                                            "instanceOf": null,
+                                            "defaultStyle": "lowercase",
+                                            "styleAliases": {}
+                                        }
+                                    ],
+                                    "compiledExplicit": [
+                                        {
+                                            "tag": "tag:yaml.org,2002:str",
+                                            "kind": "scalar",
+                                            "instanceOf": null,
+                                            "predicate": null,
+                                            "represent": null,
+                                            "defaultStyle": null,
+                                            "styleAliases": {}
+                                        },
+                                        {
+                                            "tag": "tag:yaml.org,2002:seq",
+                                            "kind": "sequence",
+                                            "instanceOf": null,
+                                            "predicate": null,
+                                            "represent": null,
+                                            "defaultStyle": null,
+                                            "styleAliases": {}
+                                        },
+                                        {
+                                            "tag": "tag:yaml.org,2002:map",
+                                            "kind": "mapping",
+                                            "instanceOf": null,
+                                            "predicate": null,
+                                            "represent": null,
+                                            "defaultStyle": null,
+                                            "styleAliases": {}
+                                        }
+                                    ],
+                                    "compiledTypeMap": {
+                                        "scalar": {
+                                            "tag:yaml.org,2002:null": {
+                                                "tag": "tag:yaml.org,2002:null",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "represent": {},
+                                                "defaultStyle": "lowercase",
+                                                "styleAliases": {}
+                                            },
+                                            "tag:yaml.org,2002:bool": {
+                                                "tag": "tag:yaml.org,2002:bool",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "represent": {},
+                                                "defaultStyle": "lowercase",
+                                                "styleAliases": {}
+                                            },
+                                            "tag:yaml.org,2002:int": {
+                                                "tag": "tag:yaml.org,2002:int",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "represent": {},
+                                                "defaultStyle": "decimal",
+                                                "styleAliases": {
+                                                    "2": "binary",
+                                                    "8": "octal",
+                                                    "10": "decimal",
+                                                    "16": "hexadecimal",
+                                                    "bin": "binary",
+                                                    "oct": "octal",
+                                                    "dec": "decimal",
+                                                    "hex": "hexadecimal"
+                                                }
+                                            },
+                                            "tag:yaml.org,2002:float": {
+                                                "tag": "tag:yaml.org,2002:float",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "defaultStyle": "lowercase",
+                                                "styleAliases": {}
+                                            },
+                                            "tag:yaml.org,2002:str": {
+                                                "tag": "tag:yaml.org,2002:str",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "predicate": null,
+                                                "represent": null,
+                                                "defaultStyle": null,
+                                                "styleAliases": {}
+                                            }
+                                        },
+                                        "sequence": {
+                                            "tag:yaml.org,2002:seq": {
+                                                "tag": "tag:yaml.org,2002:seq",
+                                                "kind": "sequence",
+                                                "instanceOf": null,
+                                                "predicate": null,
+                                                "represent": null,
+                                                "defaultStyle": null,
+                                                "styleAliases": {}
+                                            }
+                                        },
+                                        "mapping": {
+                                            "tag:yaml.org,2002:map": {
+                                                "tag": "tag:yaml.org,2002:map",
+                                                "kind": "mapping",
+                                                "instanceOf": null,
+                                                "predicate": null,
+                                                "represent": null,
+                                                "defaultStyle": null,
+                                                "styleAliases": {}
+                                            }
+                                        },
+                                        "fallback": {
+                                            "tag:yaml.org,2002:null": {
+                                                "tag": "tag:yaml.org,2002:null",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "represent": {},
+                                                "defaultStyle": "lowercase",
+                                                "styleAliases": {}
+                                            },
+                                            "tag:yaml.org,2002:bool": {
+                                                "tag": "tag:yaml.org,2002:bool",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "represent": {},
+                                                "defaultStyle": "lowercase",
+                                                "styleAliases": {}
+                                            },
+                                            "tag:yaml.org,2002:int": {
+                                                "tag": "tag:yaml.org,2002:int",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "represent": {},
+                                                "defaultStyle": "decimal",
+                                                "styleAliases": {
+                                                    "2": "binary",
+                                                    "8": "octal",
+                                                    "10": "decimal",
+                                                    "16": "hexadecimal",
+                                                    "bin": "binary",
+                                                    "oct": "octal",
+                                                    "dec": "decimal",
+                                                    "hex": "hexadecimal"
+                                                }
+                                            },
+                                            "tag:yaml.org,2002:float": {
+                                                "tag": "tag:yaml.org,2002:float",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "defaultStyle": "lowercase",
+                                                "styleAliases": {}
+                                            },
+                                            "tag:yaml.org,2002:str": {
+                                                "tag": "tag:yaml.org,2002:str",
+                                                "kind": "scalar",
+                                                "instanceOf": null,
+                                                "predicate": null,
+                                                "represent": null,
+                                                "defaultStyle": null,
+                                                "styleAliases": {}
+                                            },
+                                            "tag:yaml.org,2002:seq": {
+                                                "tag": "tag:yaml.org,2002:seq",
+                                                "kind": "sequence",
+                                                "instanceOf": null,
+                                                "predicate": null,
+                                                "represent": null,
+                                                "defaultStyle": null,
+                                                "styleAliases": {}
+                                            },
+                                            "tag:yaml.org,2002:map": {
+                                                "tag": "tag:yaml.org,2002:map",
+                                                "kind": "mapping",
+                                                "instanceOf": null,
+                                                "predicate": null,
+                                                "represent": null,
+                                                "defaultStyle": null,
+                                                "styleAliases": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "implicit": [],
+                            "explicit": [],
+                            "compiledImplicit": [
+                                {
+                                    "tag": "tag:yaml.org,2002:null",
+                                    "kind": "scalar",
+                                    "instanceOf": null,
+                                    "represent": {},
+                                    "defaultStyle": "lowercase",
+                                    "styleAliases": {}
+                                },
+                                {
+                                    "tag": "tag:yaml.org,2002:bool",
+                                    "kind": "scalar",
+                                    "instanceOf": null,
+                                    "represent": {},
+                                    "defaultStyle": "lowercase",
+                                    "styleAliases": {}
+                                },
+                                {
+                                    "tag": "tag:yaml.org,2002:int",
+                                    "kind": "scalar",
+                                    "instanceOf": null,
+                                    "represent": {},
+                                    "defaultStyle": "decimal",
+                                    "styleAliases": {
+                                        "2": "binary",
+                                        "8": "octal",
+                                        "10": "decimal",
+                                        "16": "hexadecimal",
+                                        "bin": "binary",
+                                        "oct": "octal",
+                                        "dec": "decimal",
+                                        "hex": "hexadecimal"
+                                    }
+                                },
+                                {
+                                    "tag": "tag:yaml.org,2002:float",
+                                    "kind": "scalar",
+                                    "instanceOf": null,
+                                    "defaultStyle": "lowercase",
+                                    "styleAliases": {}
+                                }
+                            ],
+                            "compiledExplicit": [
+                                {
+                                    "tag": "tag:yaml.org,2002:str",
+                                    "kind": "scalar",
+                                    "instanceOf": null,
+                                    "predicate": null,
+                                    "represent": null,
+                                    "defaultStyle": null,
+                                    "styleAliases": {}
+                                },
+                                {
+                                    "tag": "tag:yaml.org,2002:seq",
+                                    "kind": "sequence",
+                                    "instanceOf": null,
+                                    "predicate": null,
+                                    "represent": null,
+                                    "defaultStyle": null,
+                                    "styleAliases": {}
+                                },
+                                {
+                                    "tag": "tag:yaml.org,2002:map",
+                                    "kind": "mapping",
+                                    "instanceOf": null,
+                                    "predicate": null,
+                                    "represent": null,
+                                    "defaultStyle": null,
+                                    "styleAliases": {}
+                                }
+                            ],
+                            "compiledTypeMap": {
+                                "scalar": {
+                                    "tag:yaml.org,2002:null": {
+                                        "tag": "tag:yaml.org,2002:null",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "represent": {},
+                                        "defaultStyle": "lowercase",
+                                        "styleAliases": {}
+                                    },
+                                    "tag:yaml.org,2002:bool": {
+                                        "tag": "tag:yaml.org,2002:bool",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "represent": {},
+                                        "defaultStyle": "lowercase",
+                                        "styleAliases": {}
+                                    },
+                                    "tag:yaml.org,2002:int": {
+                                        "tag": "tag:yaml.org,2002:int",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "represent": {},
+                                        "defaultStyle": "decimal",
+                                        "styleAliases": {
+                                            "2": "binary",
+                                            "8": "octal",
+                                            "10": "decimal",
+                                            "16": "hexadecimal",
+                                            "bin": "binary",
+                                            "oct": "octal",
+                                            "dec": "decimal",
+                                            "hex": "hexadecimal"
+                                        }
+                                    },
+                                    "tag:yaml.org,2002:float": {
+                                        "tag": "tag:yaml.org,2002:float",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "defaultStyle": "lowercase",
+                                        "styleAliases": {}
+                                    },
+                                    "tag:yaml.org,2002:str": {
+                                        "tag": "tag:yaml.org,2002:str",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "predicate": null,
+                                        "represent": null,
+                                        "defaultStyle": null,
+                                        "styleAliases": {}
+                                    }
+                                },
+                                "sequence": {
+                                    "tag:yaml.org,2002:seq": {
+                                        "tag": "tag:yaml.org,2002:seq",
+                                        "kind": "sequence",
+                                        "instanceOf": null,
+                                        "predicate": null,
+                                        "represent": null,
+                                        "defaultStyle": null,
+                                        "styleAliases": {}
+                                    }
+                                },
+                                "mapping": {
+                                    "tag:yaml.org,2002:map": {
+                                        "tag": "tag:yaml.org,2002:map",
+                                        "kind": "mapping",
+                                        "instanceOf": null,
+                                        "predicate": null,
+                                        "represent": null,
+                                        "defaultStyle": null,
+                                        "styleAliases": {}
+                                    }
+                                },
+                                "fallback": {
+                                    "tag:yaml.org,2002:null": {
+                                        "tag": "tag:yaml.org,2002:null",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "represent": {},
+                                        "defaultStyle": "lowercase",
+                                        "styleAliases": {}
+                                    },
+                                    "tag:yaml.org,2002:bool": {
+                                        "tag": "tag:yaml.org,2002:bool",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "represent": {},
+                                        "defaultStyle": "lowercase",
+                                        "styleAliases": {}
+                                    },
+                                    "tag:yaml.org,2002:int": {
+                                        "tag": "tag:yaml.org,2002:int",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "represent": {},
+                                        "defaultStyle": "decimal",
+                                        "styleAliases": {
+                                            "2": "binary",
+                                            "8": "octal",
+                                            "10": "decimal",
+                                            "16": "hexadecimal",
+                                            "bin": "binary",
+                                            "oct": "octal",
+                                            "dec": "decimal",
+                                            "hex": "hexadecimal"
+                                        }
+                                    },
+                                    "tag:yaml.org,2002:float": {
+                                        "tag": "tag:yaml.org,2002:float",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "defaultStyle": "lowercase",
+                                        "styleAliases": {}
+                                    },
+                                    "tag:yaml.org,2002:str": {
+                                        "tag": "tag:yaml.org,2002:str",
+                                        "kind": "scalar",
+                                        "instanceOf": null,
+                                        "predicate": null,
+                                        "represent": null,
+                                        "defaultStyle": null,
+                                        "styleAliases": {}
+                                    },
+                                    "tag:yaml.org,2002:seq": {
+                                        "tag": "tag:yaml.org,2002:seq",
+                                        "kind": "sequence",
+                                        "instanceOf": null,
+                                        "predicate": null,
+                                        "represent": null,
+                                        "defaultStyle": null,
+                                        "styleAliases": {}
+                                    },
+                                    "tag:yaml.org,2002:map": {
+                                        "tag": "tag:yaml.org,2002:map",
+                                        "kind": "mapping",
+                                        "instanceOf": null,
+                                        "predicate": null,
+                                        "represent": null,
+                                        "defaultStyle": null,
+                                        "styleAliases": {}
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "implicit": [
+                        {
+                            "tag": "tag:yaml.org,2002:timestamp",
+                            "kind": "scalar",
+                            "predicate": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:merge",
+                            "kind": "scalar",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        }
+                    ],
+                    "explicit": [
+                        {
+                            "tag": "tag:yaml.org,2002:binary",
+                            "kind": "scalar",
+                            "instanceOf": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:omap",
+                            "kind": "sequence",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:pairs",
+                            "kind": "sequence",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:set",
+                            "kind": "mapping",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        }
+                    ],
+                    "compiledImplicit": [
+                        {
+                            "tag": "tag:yaml.org,2002:null",
+                            "kind": "scalar",
+                            "instanceOf": null,
+                            "represent": {},
+                            "defaultStyle": "lowercase",
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:bool",
+                            "kind": "scalar",
+                            "instanceOf": null,
+                            "represent": {},
+                            "defaultStyle": "lowercase",
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:int",
+                            "kind": "scalar",
+                            "instanceOf": null,
+                            "represent": {},
+                            "defaultStyle": "decimal",
+                            "styleAliases": {
+                                "2": "binary",
+                                "8": "octal",
+                                "10": "decimal",
+                                "16": "hexadecimal",
+                                "bin": "binary",
+                                "oct": "octal",
+                                "dec": "decimal",
+                                "hex": "hexadecimal"
+                            }
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:float",
+                            "kind": "scalar",
+                            "instanceOf": null,
+                            "defaultStyle": "lowercase",
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:timestamp",
+                            "kind": "scalar",
+                            "predicate": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:merge",
+                            "kind": "scalar",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        }
+                    ],
+                    "compiledExplicit": [
+                        {
+                            "tag": "tag:yaml.org,2002:str",
+                            "kind": "scalar",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:seq",
+                            "kind": "sequence",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:map",
+                            "kind": "mapping",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:binary",
+                            "kind": "scalar",
+                            "instanceOf": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:omap",
+                            "kind": "sequence",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:pairs",
+                            "kind": "sequence",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        },
+                        {
+                            "tag": "tag:yaml.org,2002:set",
+                            "kind": "mapping",
+                            "instanceOf": null,
+                            "predicate": null,
+                            "represent": null,
+                            "defaultStyle": null,
+                            "styleAliases": {}
+                        }
+                    ],
+                    "compiledTypeMap": {
+                        "scalar": {
+                            "tag:yaml.org,2002:null": {
+                                "tag": "tag:yaml.org,2002:null",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "represent": {},
+                                "defaultStyle": "lowercase",
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:bool": {
+                                "tag": "tag:yaml.org,2002:bool",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "represent": {},
+                                "defaultStyle": "lowercase",
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:int": {
+                                "tag": "tag:yaml.org,2002:int",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "represent": {},
+                                "defaultStyle": "decimal",
+                                "styleAliases": {
+                                    "2": "binary",
+                                    "8": "octal",
+                                    "10": "decimal",
+                                    "16": "hexadecimal",
+                                    "bin": "binary",
+                                    "oct": "octal",
+                                    "dec": "decimal",
+                                    "hex": "hexadecimal"
+                                }
+                            },
+                            "tag:yaml.org,2002:float": {
+                                "tag": "tag:yaml.org,2002:float",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "defaultStyle": "lowercase",
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:timestamp": {
+                                "tag": "tag:yaml.org,2002:timestamp",
+                                "kind": "scalar",
+                                "predicate": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:merge": {
+                                "tag": "tag:yaml.org,2002:merge",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:str": {
+                                "tag": "tag:yaml.org,2002:str",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:binary": {
+                                "tag": "tag:yaml.org,2002:binary",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            }
+                        },
+                        "sequence": {
+                            "tag:yaml.org,2002:seq": {
+                                "tag": "tag:yaml.org,2002:seq",
+                                "kind": "sequence",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:omap": {
+                                "tag": "tag:yaml.org,2002:omap",
+                                "kind": "sequence",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:pairs": {
+                                "tag": "tag:yaml.org,2002:pairs",
+                                "kind": "sequence",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            }
+                        },
+                        "mapping": {
+                            "tag:yaml.org,2002:map": {
+                                "tag": "tag:yaml.org,2002:map",
+                                "kind": "mapping",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:set": {
+                                "tag": "tag:yaml.org,2002:set",
+                                "kind": "mapping",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            }
+                        },
+                        "fallback": {
+                            "tag:yaml.org,2002:null": {
+                                "tag": "tag:yaml.org,2002:null",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "represent": {},
+                                "defaultStyle": "lowercase",
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:bool": {
+                                "tag": "tag:yaml.org,2002:bool",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "represent": {},
+                                "defaultStyle": "lowercase",
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:int": {
+                                "tag": "tag:yaml.org,2002:int",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "represent": {},
+                                "defaultStyle": "decimal",
+                                "styleAliases": {
+                                    "2": "binary",
+                                    "8": "octal",
+                                    "10": "decimal",
+                                    "16": "hexadecimal",
+                                    "bin": "binary",
+                                    "oct": "octal",
+                                    "dec": "decimal",
+                                    "hex": "hexadecimal"
+                                }
+                            },
+                            "tag:yaml.org,2002:float": {
+                                "tag": "tag:yaml.org,2002:float",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "defaultStyle": "lowercase",
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:timestamp": {
+                                "tag": "tag:yaml.org,2002:timestamp",
+                                "kind": "scalar",
+                                "predicate": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:merge": {
+                                "tag": "tag:yaml.org,2002:merge",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:str": {
+                                "tag": "tag:yaml.org,2002:str",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:seq": {
+                                "tag": "tag:yaml.org,2002:seq",
+                                "kind": "sequence",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:map": {
+                                "tag": "tag:yaml.org,2002:map",
+                                "kind": "mapping",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:binary": {
+                                "tag": "tag:yaml.org,2002:binary",
+                                "kind": "scalar",
+                                "instanceOf": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:omap": {
+                                "tag": "tag:yaml.org,2002:omap",
+                                "kind": "sequence",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:pairs": {
+                                "tag": "tag:yaml.org,2002:pairs",
+                                "kind": "sequence",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            },
+                            "tag:yaml.org,2002:set": {
+                                "tag": "tag:yaml.org,2002:set",
+                                "kind": "mapping",
+                                "instanceOf": null,
+                                "predicate": null,
+                                "represent": null,
+                                "defaultStyle": null,
+                                "styleAliases": {}
+                            }
+                        }
+                    }
+                }
+            ],
+            "implicit": [],
+            "explicit": [
+                {
+                    "tag": "tag:yaml.org,2002:js/undefined",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:js/regexp",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:js/function",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                }
+            ],
+            "compiledImplicit": [
+                {
+                    "tag": "tag:yaml.org,2002:null",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "represent": {},
+                    "defaultStyle": "lowercase",
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:bool",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "represent": {},
+                    "defaultStyle": "lowercase",
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:int",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "represent": {},
+                    "defaultStyle": "decimal",
+                    "styleAliases": {
+                        "2": "binary",
+                        "8": "octal",
+                        "10": "decimal",
+                        "16": "hexadecimal",
+                        "bin": "binary",
+                        "oct": "octal",
+                        "dec": "decimal",
+                        "hex": "hexadecimal"
+                    }
+                },
+                {
+                    "tag": "tag:yaml.org,2002:float",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": "lowercase",
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:timestamp",
+                    "kind": "scalar",
+                    "predicate": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:merge",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                }
+            ],
+            "compiledExplicit": [
+                {
+                    "tag": "tag:yaml.org,2002:str",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:seq",
+                    "kind": "sequence",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:map",
+                    "kind": "mapping",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:binary",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:omap",
+                    "kind": "sequence",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:pairs",
+                    "kind": "sequence",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:set",
+                    "kind": "mapping",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:js/undefined",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:js/regexp",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                },
+                {
+                    "tag": "tag:yaml.org,2002:js/function",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+                }
+            ],
+            "compiledTypeMap": {
+                "scalar": {
+                    "tag:yaml.org,2002:null": {
+                        "tag": "tag:yaml.org,2002:null",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "represent": {},
+                        "defaultStyle": "lowercase",
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:bool": {
+                        "tag": "tag:yaml.org,2002:bool",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "represent": {},
+                        "defaultStyle": "lowercase",
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:int": {
+                        "tag": "tag:yaml.org,2002:int",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "represent": {},
+                        "defaultStyle": "decimal",
+                        "styleAliases": {
+                            "2": "binary",
+                            "8": "octal",
+                            "10": "decimal",
+                            "16": "hexadecimal",
+                            "bin": "binary",
+                            "oct": "octal",
+                            "dec": "decimal",
+                            "hex": "hexadecimal"
+                        }
+                    },
+                    "tag:yaml.org,2002:float": {
+                        "tag": "tag:yaml.org,2002:float",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": "lowercase",
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:timestamp": {
+                        "tag": "tag:yaml.org,2002:timestamp",
+                        "kind": "scalar",
+                        "predicate": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:merge": {
+                        "tag": "tag:yaml.org,2002:merge",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:str": {
+                        "tag": "tag:yaml.org,2002:str",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:binary": {
+                        "tag": "tag:yaml.org,2002:binary",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:js/undefined": {
+                        "tag": "tag:yaml.org,2002:js/undefined",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:js/regexp": {
+                        "tag": "tag:yaml.org,2002:js/regexp",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:js/function": {
+                        "tag": "tag:yaml.org,2002:js/function",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    }
+                },
+                "sequence": {
+                    "tag:yaml.org,2002:seq": {
+                        "tag": "tag:yaml.org,2002:seq",
+                        "kind": "sequence",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:omap": {
+                        "tag": "tag:yaml.org,2002:omap",
+                        "kind": "sequence",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:pairs": {
+                        "tag": "tag:yaml.org,2002:pairs",
+                        "kind": "sequence",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    }
+                },
+                "mapping": {
+                    "tag:yaml.org,2002:map": {
+                        "tag": "tag:yaml.org,2002:map",
+                        "kind": "mapping",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:set": {
+                        "tag": "tag:yaml.org,2002:set",
+                        "kind": "mapping",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    }
+                },
+                "fallback": {
+                    "tag:yaml.org,2002:null": {
+                        "tag": "tag:yaml.org,2002:null",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "represent": {},
+                        "defaultStyle": "lowercase",
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:bool": {
+                        "tag": "tag:yaml.org,2002:bool",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "represent": {},
+                        "defaultStyle": "lowercase",
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:int": {
+                        "tag": "tag:yaml.org,2002:int",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "represent": {},
+                        "defaultStyle": "decimal",
+                        "styleAliases": {
+                            "2": "binary",
+                            "8": "octal",
+                            "10": "decimal",
+                            "16": "hexadecimal",
+                            "bin": "binary",
+                            "oct": "octal",
+                            "dec": "decimal",
+                            "hex": "hexadecimal"
+                        }
+                    },
+                    "tag:yaml.org,2002:float": {
+                        "tag": "tag:yaml.org,2002:float",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": "lowercase",
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:timestamp": {
+                        "tag": "tag:yaml.org,2002:timestamp",
+                        "kind": "scalar",
+                        "predicate": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:merge": {
+                        "tag": "tag:yaml.org,2002:merge",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:str": {
+                        "tag": "tag:yaml.org,2002:str",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:seq": {
+                        "tag": "tag:yaml.org,2002:seq",
+                        "kind": "sequence",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:map": {
+                        "tag": "tag:yaml.org,2002:map",
+                        "kind": "mapping",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:binary": {
+                        "tag": "tag:yaml.org,2002:binary",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:omap": {
+                        "tag": "tag:yaml.org,2002:omap",
+                        "kind": "sequence",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:pairs": {
+                        "tag": "tag:yaml.org,2002:pairs",
+                        "kind": "sequence",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:set": {
+                        "tag": "tag:yaml.org,2002:set",
+                        "kind": "mapping",
+                        "instanceOf": null,
+                        "predicate": null,
+                        "represent": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:js/undefined": {
+                        "tag": "tag:yaml.org,2002:js/undefined",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:js/regexp": {
+                        "tag": "tag:yaml.org,2002:js/regexp",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    },
+                    "tag:yaml.org,2002:js/function": {
+                        "tag": "tag:yaml.org,2002:js/function",
+                        "kind": "scalar",
+                        "instanceOf": null,
+                        "defaultStyle": null,
+                        "styleAliases": {}
+                    }
+                }
+            }
+        }
+    ],
+        "implicit": [],
+        "explicit": [
+        {
+            "tag": "input",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!element",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!change",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!check",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!page",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!start",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!configuration",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        }
+    ],
+        "compiledImplicit": [
+        {
+            "tag": "tag:yaml.org,2002:null",
+            "kind": "scalar",
+            "instanceOf": null,
+            "represent": {},
+            "defaultStyle": "lowercase",
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:bool",
+            "kind": "scalar",
+            "instanceOf": null,
+            "represent": {},
+            "defaultStyle": "lowercase",
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:int",
+            "kind": "scalar",
+            "instanceOf": null,
+            "represent": {},
+            "defaultStyle": "decimal",
+            "styleAliases": {
+                "2": "binary",
+                "8": "octal",
+                "10": "decimal",
+                "16": "hexadecimal",
+                "bin": "binary",
+                "oct": "octal",
+                "dec": "decimal",
+                "hex": "hexadecimal"
+            }
+        },
+        {
+            "tag": "tag:yaml.org,2002:float",
+            "kind": "scalar",
+            "instanceOf": null,
+            "defaultStyle": "lowercase",
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:timestamp",
+            "kind": "scalar",
+            "predicate": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:merge",
+            "kind": "scalar",
+            "instanceOf": null,
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        }
+    ],
+        "compiledExplicit": [
+        {
+            "tag": "tag:yaml.org,2002:str",
+            "kind": "scalar",
+            "instanceOf": null,
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:seq",
+            "kind": "sequence",
+            "instanceOf": null,
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:map",
+            "kind": "mapping",
+            "instanceOf": null,
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:binary",
+            "kind": "scalar",
+            "instanceOf": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:omap",
+            "kind": "sequence",
+            "instanceOf": null,
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:pairs",
+            "kind": "sequence",
+            "instanceOf": null,
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:set",
+            "kind": "mapping",
+            "instanceOf": null,
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:js/undefined",
+            "kind": "scalar",
+            "instanceOf": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:js/regexp",
+            "kind": "scalar",
+            "instanceOf": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "tag:yaml.org,2002:js/function",
+            "kind": "scalar",
+            "instanceOf": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "input",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!element",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!change",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!check",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!page",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!start",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        },
+        {
+            "tag": "!configuration",
+            "kind": "mapping",
+            "predicate": null,
+            "represent": null,
+            "defaultStyle": null,
+            "styleAliases": {}
+        }
+    ],
+        "compiledTypeMap": {
+        "scalar": {
+            "tag:yaml.org,2002:null": {
+                "tag": "tag:yaml.org,2002:null",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "represent": {},
+                "defaultStyle": "lowercase",
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:bool": {
+                "tag": "tag:yaml.org,2002:bool",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "represent": {},
+                "defaultStyle": "lowercase",
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:int": {
+                "tag": "tag:yaml.org,2002:int",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "represent": {},
+                "defaultStyle": "decimal",
+                    "styleAliases": {
+                    "2": "binary",
+                        "8": "octal",
+                        "10": "decimal",
+                        "16": "hexadecimal",
+                        "bin": "binary",
+                        "oct": "octal",
+                        "dec": "decimal",
+                        "hex": "hexadecimal"
+                }
+            },
+            "tag:yaml.org,2002:float": {
+                "tag": "tag:yaml.org,2002:float",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": "lowercase",
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:timestamp": {
+                "tag": "tag:yaml.org,2002:timestamp",
+                    "kind": "scalar",
+                    "predicate": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:merge": {
+                "tag": "tag:yaml.org,2002:merge",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:str": {
+                "tag": "tag:yaml.org,2002:str",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:binary": {
+                "tag": "tag:yaml.org,2002:binary",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:js/undefined": {
+                "tag": "tag:yaml.org,2002:js/undefined",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:js/regexp": {
+                "tag": "tag:yaml.org,2002:js/regexp",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:js/function": {
+                "tag": "tag:yaml.org,2002:js/function",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            }
+        },
+        "sequence": {
+            "tag:yaml.org,2002:seq": {
+                "tag": "tag:yaml.org,2002:seq",
+                    "kind": "sequence",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:omap": {
+                "tag": "tag:yaml.org,2002:omap",
+                    "kind": "sequence",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:pairs": {
+                "tag": "tag:yaml.org,2002:pairs",
+                    "kind": "sequence",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            }
+        },
+        "mapping": {
+            "tag:yaml.org,2002:map": {
+                "tag": "tag:yaml.org,2002:map",
+                    "kind": "mapping",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:set": {
+                "tag": "tag:yaml.org,2002:set",
+                    "kind": "mapping",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "input": {
+                "tag": "input",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!element": {
+                "tag": "!element",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!change": {
+                "tag": "!change",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!check": {
+                "tag": "!check",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!page": {
+                "tag": "!page",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!start": {
+                "tag": "!start",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!configuration": {
+                "tag": "!configuration",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            }
+        },
+        "fallback": {
+            "tag:yaml.org,2002:null": {
+                "tag": "tag:yaml.org,2002:null",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "represent": {},
+                "defaultStyle": "lowercase",
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:bool": {
+                "tag": "tag:yaml.org,2002:bool",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "represent": {},
+                "defaultStyle": "lowercase",
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:int": {
+                "tag": "tag:yaml.org,2002:int",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "represent": {},
+                "defaultStyle": "decimal",
+                    "styleAliases": {
+                    "2": "binary",
+                        "8": "octal",
+                        "10": "decimal",
+                        "16": "hexadecimal",
+                        "bin": "binary",
+                        "oct": "octal",
+                        "dec": "decimal",
+                        "hex": "hexadecimal"
+                }
+            },
+            "tag:yaml.org,2002:float": {
+                "tag": "tag:yaml.org,2002:float",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": "lowercase",
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:timestamp": {
+                "tag": "tag:yaml.org,2002:timestamp",
+                    "kind": "scalar",
+                    "predicate": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:merge": {
+                "tag": "tag:yaml.org,2002:merge",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:str": {
+                "tag": "tag:yaml.org,2002:str",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:seq": {
+                "tag": "tag:yaml.org,2002:seq",
+                    "kind": "sequence",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:map": {
+                "tag": "tag:yaml.org,2002:map",
+                    "kind": "mapping",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:binary": {
+                "tag": "tag:yaml.org,2002:binary",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:omap": {
+                "tag": "tag:yaml.org,2002:omap",
+                    "kind": "sequence",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:pairs": {
+                "tag": "tag:yaml.org,2002:pairs",
+                    "kind": "sequence",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:set": {
+                "tag": "tag:yaml.org,2002:set",
+                    "kind": "mapping",
+                    "instanceOf": null,
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:js/undefined": {
+                "tag": "tag:yaml.org,2002:js/undefined",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:js/regexp": {
+                "tag": "tag:yaml.org,2002:js/regexp",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "tag:yaml.org,2002:js/function": {
+                "tag": "tag:yaml.org,2002:js/function",
+                    "kind": "scalar",
+                    "instanceOf": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "input": {
+                "tag": "input",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!element": {
+                "tag": "!element",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!change": {
+                "tag": "!change",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!check": {
+                "tag": "!check",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!page": {
+                "tag": "!page",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!start": {
+                "tag": "!start",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            },
+            "!configuration": {
+                "tag": "!configuration",
+                    "kind": "mapping",
+                    "predicate": null,
+                    "represent": null,
+                    "defaultStyle": null,
+                    "styleAliases": {}
+            }
+        }
+    }
+},
+    "onWarning": null,
+    "legacy": false,
+    "json": false,
+    "listener": null,
+    "implicitTypes": [
+    {
+        "tag": "tag:yaml.org,2002:null",
+        "kind": "scalar",
+        "instanceOf": null,
+        "represent": {},
+        "defaultStyle": "lowercase",
+        "styleAliases": {}
+    },
+    {
+        "tag": "tag:yaml.org,2002:bool",
+        "kind": "scalar",
+        "instanceOf": null,
+        "represent": {},
+        "defaultStyle": "lowercase",
+        "styleAliases": {}
+    },
+    {
+        "tag": "tag:yaml.org,2002:int",
+        "kind": "scalar",
+        "instanceOf": null,
+        "represent": {},
+        "defaultStyle": "decimal",
+        "styleAliases": {
+            "2": "binary",
+            "8": "octal",
+            "10": "decimal",
+            "16": "hexadecimal",
+            "bin": "binary",
+            "oct": "octal",
+            "dec": "decimal",
+            "hex": "hexadecimal"
+        }
+    },
+    {
+        "tag": "tag:yaml.org,2002:float",
+        "kind": "scalar",
+        "instanceOf": null,
+        "defaultStyle": "lowercase",
+        "styleAliases": {}
+    },
+    {
+        "tag": "tag:yaml.org,2002:timestamp",
+        "kind": "scalar",
+        "predicate": null,
+        "defaultStyle": null,
+        "styleAliases": {}
+    },
+    {
+        "tag": "tag:yaml.org,2002:merge",
+        "kind": "scalar",
+        "instanceOf": null,
+        "predicate": null,
+        "represent": null,
+        "defaultStyle": null,
+        "styleAliases": {}
+    }
+],
+    "typeMap": {
+    "scalar": {
+        "tag:yaml.org,2002:null": {
+            "tag": "tag:yaml.org,2002:null",
+                "kind": "scalar",
+                "instanceOf": null,
+                "represent": {},
+            "defaultStyle": "lowercase",
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:bool": {
+            "tag": "tag:yaml.org,2002:bool",
+                "kind": "scalar",
+                "instanceOf": null,
+                "represent": {},
+            "defaultStyle": "lowercase",
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:int": {
+            "tag": "tag:yaml.org,2002:int",
+                "kind": "scalar",
+                "instanceOf": null,
+                "represent": {},
+            "defaultStyle": "decimal",
+                "styleAliases": {
+                "2": "binary",
+                    "8": "octal",
+                    "10": "decimal",
+                    "16": "hexadecimal",
+                    "bin": "binary",
+                    "oct": "octal",
+                    "dec": "decimal",
+                    "hex": "hexadecimal"
+            }
+        },
+        "tag:yaml.org,2002:float": {
+            "tag": "tag:yaml.org,2002:float",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": "lowercase",
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:timestamp": {
+            "tag": "tag:yaml.org,2002:timestamp",
+                "kind": "scalar",
+                "predicate": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:merge": {
+            "tag": "tag:yaml.org,2002:merge",
+                "kind": "scalar",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:str": {
+            "tag": "tag:yaml.org,2002:str",
+                "kind": "scalar",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:binary": {
+            "tag": "tag:yaml.org,2002:binary",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:js/undefined": {
+            "tag": "tag:yaml.org,2002:js/undefined",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:js/regexp": {
+            "tag": "tag:yaml.org,2002:js/regexp",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:js/function": {
+            "tag": "tag:yaml.org,2002:js/function",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        }
+    },
+    "sequence": {
+        "tag:yaml.org,2002:seq": {
+            "tag": "tag:yaml.org,2002:seq",
+                "kind": "sequence",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:omap": {
+            "tag": "tag:yaml.org,2002:omap",
+                "kind": "sequence",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:pairs": {
+            "tag": "tag:yaml.org,2002:pairs",
+                "kind": "sequence",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        }
+    },
+    "mapping": {
+        "tag:yaml.org,2002:map": {
+            "tag": "tag:yaml.org,2002:map",
+                "kind": "mapping",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:set": {
+            "tag": "tag:yaml.org,2002:set",
+                "kind": "mapping",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "input": {
+            "tag": "input",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!element": {
+            "tag": "!element",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!change": {
+            "tag": "!change",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!check": {
+            "tag": "!check",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!page": {
+            "tag": "!page",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!start": {
+            "tag": "!start",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!configuration": {
+            "tag": "!configuration",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        }
+    },
+    "fallback": {
+        "tag:yaml.org,2002:null": {
+            "tag": "tag:yaml.org,2002:null",
+                "kind": "scalar",
+                "instanceOf": null,
+                "represent": {},
+            "defaultStyle": "lowercase",
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:bool": {
+            "tag": "tag:yaml.org,2002:bool",
+                "kind": "scalar",
+                "instanceOf": null,
+                "represent": {},
+            "defaultStyle": "lowercase",
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:int": {
+            "tag": "tag:yaml.org,2002:int",
+                "kind": "scalar",
+                "instanceOf": null,
+                "represent": {},
+            "defaultStyle": "decimal",
+                "styleAliases": {
+                "2": "binary",
+                    "8": "octal",
+                    "10": "decimal",
+                    "16": "hexadecimal",
+                    "bin": "binary",
+                    "oct": "octal",
+                    "dec": "decimal",
+                    "hex": "hexadecimal"
+            }
+        },
+        "tag:yaml.org,2002:float": {
+            "tag": "tag:yaml.org,2002:float",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": "lowercase",
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:timestamp": {
+            "tag": "tag:yaml.org,2002:timestamp",
+                "kind": "scalar",
+                "predicate": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:merge": {
+            "tag": "tag:yaml.org,2002:merge",
+                "kind": "scalar",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:str": {
+            "tag": "tag:yaml.org,2002:str",
+                "kind": "scalar",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:seq": {
+            "tag": "tag:yaml.org,2002:seq",
+                "kind": "sequence",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:map": {
+            "tag": "tag:yaml.org,2002:map",
+                "kind": "mapping",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:binary": {
+            "tag": "tag:yaml.org,2002:binary",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:omap": {
+            "tag": "tag:yaml.org,2002:omap",
+                "kind": "sequence",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:pairs": {
+            "tag": "tag:yaml.org,2002:pairs",
+                "kind": "sequence",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:set": {
+            "tag": "tag:yaml.org,2002:set",
+                "kind": "mapping",
+                "instanceOf": null,
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:js/undefined": {
+            "tag": "tag:yaml.org,2002:js/undefined",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:js/regexp": {
+            "tag": "tag:yaml.org,2002:js/regexp",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "tag:yaml.org,2002:js/function": {
+            "tag": "tag:yaml.org,2002:js/function",
+                "kind": "scalar",
+                "instanceOf": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "input": {
+            "tag": "input",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!element": {
+            "tag": "!element",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!change": {
+            "tag": "!change",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!check": {
+            "tag": "!check",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!page": {
+            "tag": "!page",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!start": {
+            "tag": "!start",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        },
+        "!configuration": {
+            "tag": "!configuration",
+                "kind": "mapping",
+                "predicate": null,
+                "represent": null,
+                "defaultStyle": null,
+                "styleAliases": {}
+        }
+    }
+},
+    "length": 43,
+    "position": 43,
+    "line": 4,
+    "lineStart": 43,
+    "lineIndent": 0,
+    "documents": [],
+    "version": null,
+    "checkLineBreaks": false,
+    "tagMap": {},
+    "anchorMap": {},
+    "tag": "!start",
+    "anchor": null,
+    "kind": "mapping",
+    "result": {
+    "page": null
+}
+}
