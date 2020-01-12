@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>tech.vanagas</groupId>
+    <artifactId>IGGY</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <!-- maven repositories -->
+    <repositories>
+        <repository>
+            <id>maven-central</id>
+            <url>http://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>http://central.maven.org/maven2</url>
+        </repository>
+    </repositories>
+
+    <!-- source code management -->
+    <scm>
+        <url>https://gitlab.com/VanagaS/IGGY.git</url>
+        <connection>scm:git:git@gitlab.com:VanagaS/IGGY.git</connection>
+        <developerConnection>scm:git:git@gitlab.com:VanagaS/IGGY.git</developerConnection>
+    </scm>
+
+    <!-- developer info -->
+    <developers>
+        <developer>
+            <id>VanagaS</id>
+            <name>VanagaS</name>
+            <url>https://github.com/VanagaS</url>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <dependency.locations.enabled>false</dependency.locations.enabled>
+        <maven.clean.failOnError>false</maven.clean.failOnError>
+        <findbugs.version>3.0.1</findbugs.version> <!-- 3.0.1 -->
+        <checkstyle.version>RELEASE</checkstyle.version> <!-- 2.17 -->
+        <surefire.reportplugin.version>2.19.1</surefire.reportplugin.version>
+        <cobertura.version>2.6</cobertura.version>
+        <junit.version>4.12</junit.version>
+        <junit.vintage.version>4.12.0-M4</junit.vintage.version>
+        <junit.platform.version>1.0.0-M4</junit.platform.version>
+        <junit.jupiter.version>5.0.0-M4</junit.jupiter.version>
+        <log4j.version>2.7</log4j.version>
+        <logback.version>1.1.7</logback.version>
+        <slf4j-api.version>1.7.20</slf4j-api.version>
+    </properties>
+
+    <dependencies>
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>${junit.platform.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>${junit.platform.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Log4J -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <!-- The following plugin to trigger findBugs at the time of compiling -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>${findbugs.version}</version>
+                <configuration>
+                    <!-- If compiling throws out-of-memory, change the effort to Low / Medium -->
+                    <effort>Max</effort>
+                    <!-- Report every bug -->
+                    <threshold>Low</threshold>
+                    <!-- If we want a report, produce it in XML. I wanted the report to
+                        be added as part of successful build and a GIT commit -->
+                    <xmlOutput>true</xmlOutput>
+                    <!-- XML report should be placed in the below directory -->
+                    <findbugsXmlOutputDirectory>${project.build.directory}/findbugs</findbugsXmlOutputDirectory>
+                    <excludeFilterFile>${project.basedir}/findbugs-exclude.xml</excludeFilterFile>
+                </configuration>
+                <executions>
+                    <!-- FindBugs MUST check the source for bugs during compile. TODO: Add
+                        to GIT pre-commit hooks to check for this and if not available throw errors. -->
+                    <execution>
+                        <id>analyze-compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>${cobertura.version}</version>
+                <configuration>
+                    <check combine.children="append"></check>
+                    <formats>
+                        <format>xml</format>
+                    </formats>
+                </configuration>
+            </plugin -->
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.googlecode.maven-java-formatter-plugin</groupId>
+                <artifactId>maven-java-formatter-plugin</artifactId>
+                <version>0.4</version>
+                <configuration>
+                    <!--configFile>${project.basedir}/inbot-formatter.xml</configFile -->
+                    <configFile>${project.basedir}/java-google-style.xml</configFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>format</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>cc.iggy.core.OSVSN</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
