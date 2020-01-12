@@ -30,3 +30,10 @@ For example, to test login to github.com, using selenium on browsers Chrome and 
                   find-text: "@data-ga-click"
                   compare: "text:Signed in as"
                   print: true
+
+
+## Folder Structure
+
+    IGGY: The actual project
+    linter: The linter for electron to add IGGY development support easier on electron
+    
